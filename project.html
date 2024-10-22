@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #333; /* Dark background */
+            color: #ddd; /* Lighter text for contrast */
+        }
+        h1 {
+            text-align: center;
+            font-size: 42px; /* Increased size */
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items at the top */
+            height: auto; /* Adjust height */
+            margin-top: 60px; /* Space for fixed navbar */
+            
+        }
+        .sidebar {
+            background-color: #444; /* Sidebar background */
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px; /* Width of the sidebar */
+            margin-right: 20px; /* Space between sidebar and content */
+        }
+        .content-box {
+            background-color: #444; /* Dark grey box */
+            padding: 40px; /* Increased padding */
+            border-radius: 20px; /* Larger border radius */
+            width: 70%; /* Increased width */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+            text-align: center;
+        }
+        img.centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%; 
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            animation: borderAnimation 5s infinite;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 18px; /* Increased font size */
+            color: #eee;
+            margin-top: 20px;
+        }
+        /* Keyframe animations */
+        @keyframes borderAnimation {
+            0% {
+                box-shadow: 0 0 20px red; /* Larger shadow */
+            }
+            25% {
+                box-shadow: 0 0 20px yellow;
+            }
+            50% {
+                box-shadow: 0 0 20px green;
+            }
+            75% {
+                box-shadow: 0 0 20px blue;
+            }
+            100% {
+                box-shadow: 0 0 20px red;
+            }
+        }
+        /* Fade-in animation for the whole content box */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .content-box {
+            animation: fadeIn 2s ease-in-out;
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: #222;
+            border: none;
+        }
+        .navbar-nav li a {
+            color: #ddd !important;
+        }
+        .navbar-nav li a:hover {
+            color: rgb(224, 214, 214) !important; /* Restored red color */
+        }
+        .navbar-brand {
+            color: #ddd !important;
+        }
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        .dropdown-menu li a:hover {
+            background-color: red !important;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">Project</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="concept.html">Concept</a></li> 
+                        <li><a href="databases.html">Databases</a></li> 
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="myPage" class="container">
+    <div class="sidebar">
+        <h3>Projects</h3>
+        <ul>
+            <li><a href="project1.html">Project 1: NOT Gate</a></li>
+            <li><a href="project2.html">Project 2: AND Gate</a></li>
+            <li><a href="project3.html">Project 3: Binary to Hexadecimal Converter</a></li>
+            <li><a href="project4-ascii.html">Project 4: ASCII Converter</a></li>
+            <li><a href="project4-unicode.html">Project 4: UNICODE Converter</a></li>
+            <li><a href="project5.html">Project 5: Machine Language Instructions Converter</a></li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h1>Project</h1>
+        <img src="FOC.png" alt="Project" class="centered-image">
+        <p>The final project will consist of 4 sections. Each section has a deadline to complete. A complete description of the project can be found on the course moodle site. It will consist of launching a website built with HTML, CSS, and JavaScript and hosted on GitHub. This site is a benchmark for the Final Project. See Project Specification on Moodle Site.</p>
+        
+        
+</div>
+
+<!-- Add the following scripts for Bootstrap functionality -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

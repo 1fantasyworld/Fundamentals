@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1: NOT Gate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* General styles */
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer is pushed to the bottom */
+        }
+        /* Navbar styles */
+        .navbar {
+            background-color: #222;
+            border: none;
+        }
+        .navbar-nav li a {
+            color: #ddd !important;
+        }
+        .navbar-nav li a:hover {
+            color: rgb(224, 214, 214) !important; /* Hover color */
+        }
+        .navbar-brand {
+            color: #ddd !important;
+        }
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        .dropdown-menu li a:hover {
+            background-color: red !important; /* Dropdown hover color */
+        }
+        .column {
+            padding: 20px;
+            text-align: center;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #ddd;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#myPage">Project 1: NOT Gate</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="course.html">Course</a></li>
+                            <li><a href="project.html">Project</a></li>
+                            <li><a href="concept.html">Concept</a></li> 
+                            <li><a href="databases.html">Databases</a></li> 
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="project1.html">Project 1</a></li>
+                            <li><a href="project2.html">Project 2</a></li>
+                            <li><a href="project3.html">Project 3</a></li>
+                            <li><a href="project4-ascii.html">Project 4: ASCII</a></li>
+                            <li><a href="project4-unicode.html">Project 4: UNICODE</a></li>
+                            <li><a href="project5.html">Project 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container" style="margin-top: 70px;">
+     
+        <div class="row">
+            <div class="column" style="background-color: #aaa;">
+                <h2>Input</h2>
+                <p>
+                    <button onclick="document.getElementById('belizeImage').src='on.png';">
+                        <img src="onbutton.png" alt="ON" style="width: 100px; height: 40px;">
+                    </button>
+                </p>
+                <p>
+                    <button onclick="document.getElementById('belizeImage').src='off.png';">
+                        <img src="offbutton.png" alt="OFF" style="width: 100px; height: 40px;">
+                    </button>
+                </p>
+            </div>
+            <div class="column" style="background-color: #bbb;">
+                <h2>Output</h2>
+                <hr>
+                <img id="belizeImage" src="off.png" alt="Output" width="400" height="86" align="center">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Project 1. </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </footer>
+
+</body>
+</html>

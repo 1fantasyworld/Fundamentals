@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* Navbar styles */
+        .navbar {
+            background-color: #222;
+            border: none;
+        }
+        .navbar-nav li a {
+            color: #ddd !important;
+        }
+        .navbar-nav li a:hover {
+            color: rgb(224, 214, 214) !important; /* Restored red color */
+        }
+        .navbar-brand {
+            color: #ddd !important;
+        }
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        .dropdown-menu li a:hover {
+            background-color: red !important;
+        }
+        /* Button styles */
+        .button {
+            background-color: #008CBA; /* Blue */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-top: 20px; /* Add some space above buttons */
+        }
+        /* Image styles */
+        img {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">Project 5: Machine Language Instructions Converter</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="concept.html">Concept</a></li> 
+                        <li><a href="databases.html">Databases</a></li> 
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="project1.html">Project 1</a></li>
+                        <li><a href="project2.html">Project 2</a></li>
+                        <li><a href="project3.html">Project 3</a></li>
+                        <li><a href="project4-ascii.html">Project 4: ASCII</a></li>
+                        <li><a href="project4-unicode.html">Project 4: UNICODE</a></li>
+                        <li><a href="project5.html">Project 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<p>
+    <img id="MLinstrucitons" src="MLblank.png">
+    <img id="Englishinstrucitons" src="">
+</p>
+
+<div style="margin-top: 100px;"> <!-- Adjust this margin to move buttons lower -->
+    <button class="button" onclick="document.getElementById('MLinstrucitons').src='ML1.png'; document.getElementById('Englishinstrucitons').src='EI1.png'">156C</button><br>
+    <button class="button" onclick="document.getElementById('MLinstrucitons').src='ML2.png'; document.getElementById('Englishinstrucitons').src='EI2.png'">166D</button><br>
+    <button class="button" onclick="document.getElementById('MLinstrucitons').src='ML3.png'; document.getElementById('Englishinstrucitons').src='EI3.png'">5056</button><br>
+    <button class="button" onclick="document.getElementById('MLinstrucitons').src='ML4.png'; document.getElementById('Englishinstrucitons').src='EI4.png'">306E</button><br>
+    <button class="button" onclick="document.getElementById('MLinstrucitons').src='ML5.png'; document.getElementById('Englishinstrucitons').src='EI5.png'">C000</button><br>
+</div>
+
+<!-- Add the following scripts for Bootstrap functionality -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
